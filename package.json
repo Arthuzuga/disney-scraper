@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "git@github.com:Arthuzuga/disney-scraper.git",
   "author": "Joao Tavares <joao.tavares@cubos.io>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer": "^1.15.0"
+  }
 }
