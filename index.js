@@ -11,6 +11,8 @@ const numberOfDays = 1;
 
 	const pricePerPersonPerDay = await getTicketPrice(url, numberOfDays - 1);
 
-	console.log({ exchangeRate, pricePerPersonPerDay });
+	const brl = Math.ceil(exchangeRate * pricePerPersonPerDay) * numberOfDays;
+
+	console.log({ exchangeRate, pricePerPersonPerDay, brl });
 	process.exit();
 })();
