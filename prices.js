@@ -11,7 +11,7 @@ module.exports = async function(url, numberOfDays) {
 			.shadowRoot.querySelector('tickets-config-page')
 			.shadowRoot.querySelector('tickets-num-days')
 			.shadowRoot.querySelectorAll('dprd-price')
-			[numberOfDays].shadowRoot.querySelector('span#price').textContent;
+			[numberOfDays - 1].shadowRoot.querySelector('span#price').textContent;
 
 		return Number(data);
 	}, numberOfDays);
