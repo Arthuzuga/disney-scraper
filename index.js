@@ -9,7 +9,7 @@ const numberOfDays = 1;
 (async () => {
 	const exchangeRate = await getExchangeRate(url);
 
-	const pricePerPersonPerDay = await getTicketPrice(url, numberOfDays - 1);
+	const pricePerPersonPerDay = await getTicketPrice(url, numberOfDays);
 
 	const brl = Math.ceil(exchangeRate * pricePerPersonPerDay) * numberOfDays;
 
